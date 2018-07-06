@@ -22,13 +22,22 @@ function increaseRankBy(n) {
 function deepestChild() {
   let children = document.querySelectorAll('#grand-node')
   let deepestLevel = 0
-
-  function dig(child) {
-    if (Array.isArray(child.children)) {
-      
+  let deepestChild = ''
+  
+  children.forEach(child =>
+    let currentChild = child
+    let level = 0
+    while(currentChild.querySelector(':first-child') != null) {
+      level++
+      if(level > deepestLevel) {
+        deepestLevel = level
+        deepestChild = currentChild
+      }
+      currentChild = currentChild.querySelector(':first-child')
     }
-  }
 
+    return deepestChild
+  )
 }
 // function getAllChildren(group, children) {
 //   children = children || [];
