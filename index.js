@@ -27,7 +27,7 @@ function deepestChild() {
   children.forEach(child => {
     let currentChild = child
     let currentLevel = 0
-    
+
     while(currentChild.querySelector(':first-child') != null) {
       currentLevel++
       currentChild = currentChild.querySelector(':first-child')
