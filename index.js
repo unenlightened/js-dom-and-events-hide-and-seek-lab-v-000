@@ -29,10 +29,6 @@ function deepestChild() {
     let level = 0
     while(currentChild.querySelector(':first-child') != null) {
       level++
-      if(level > deepestLevel) {
-        deepestLevel = level
-        deepestChild = currentChild
-      }
       currentChild = currentChild.querySelector(':first-child')
     }
 
