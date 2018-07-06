@@ -23,7 +23,7 @@ function deepestChild() {
   let children = document.querySelectorAll('#grand-node')
   let deepestLevel = 0
   let deepestChild = ''
-  
+
   children.forEach(child =>
     let currentChild = child
     let level = 0
