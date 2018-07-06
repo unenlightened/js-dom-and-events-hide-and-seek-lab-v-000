@@ -14,6 +14,16 @@ function increaseRankBy(n) {
   }
 }
 
+// probably not meant to solve it like this...
+// function deepestChild() {
+//   return document.querySelector('#grand-node div div div div')
+// }
+
 function deepestChild() {
-  return document.querySelector('#grand-node div div div div')
+  let children = document.querySelectorAll('#grand-node')
+
+  for(let i = 0; i < children.length; i++) {
+    
+  }
 }
+
