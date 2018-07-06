@@ -9,7 +9,7 @@ function nestedTarget() {
 function increaseRankBy(n) {
   let ranks = document.querySelectorAll('.ranked-list li')
 
-  ranks.forEach (rank => 
+  ranks.forEach (rank =>
     rank.innerHTML = parseInt(rank.innerHTML) + n )
   }
 }
@@ -22,14 +22,14 @@ function increaseRankBy(n) {
 // function deepestChild() {
 //   let children = document.querySelectorAll('#grand-node')
 //   let deepestLevel = 0
-// 
+//
 //   return children.forEach(function (child))
-//   
+//
 // }
 // function getAllChildren(group, children) {
 //   children = children || [];
 //   if(group && Array.isArray(group.children)) {
-//     group.children.forEach(function(child) { 
+//     group.children.forEach(function(child) {
 //       getAllChildren(child, children)
 //     });
 //   }
@@ -38,7 +38,7 @@ function increaseRankBy(n) {
 //   }
 //   return children;
 // }
-// 
+//
 // var data = { children: [{ children: [{ children: [{ name: 'item1' }, { name: 'item2' }, { name: 'item3' }] }, { children: [{ name: 'item1' }, { name: 'item2' }, { name: 'item3' }] }, { children: [{ name: 'item1' }, { name: 'item2' }, { name: 'item3' }] }] }, { children: [{ children: [{ name: 'item1' }] }, { children: [{ name: 'item1' }] }, { children: [{ name: 'item1' }] }] }, { children: [{ children: [{ name: 'item1' }, { name: 'item2' }, { name: 'item3' }] }, { children: [{ name: 'item1' }, { name: 'item2' }, { name: 'item3' }] }, { children: [{ name: 'item1' }, { name: 'item2' }, { name: 'item3' }] }] }] },
 //     children = [data].reduce(function iter(r, a) {
 //         if (Array.isArray(a.children)) {
@@ -47,5 +47,5 @@ function increaseRankBy(n) {
 //         r.push(a);
 //         return r;
 //     }, []);
-// 
+//
 // console.log(children);
