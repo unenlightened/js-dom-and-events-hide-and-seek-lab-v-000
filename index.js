@@ -13,5 +13,3 @@ function increaseRankBy(n) {
     ranks[i].innerHTML += n
   }
 }
-
-
