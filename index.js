@@ -19,13 +19,17 @@ function increaseRankBy(n) {
 //   return document.querySelector('#grand-node div div div div')
 // }
 
-// function deepestChild() {
-//   let children = document.querySelectorAll('#grand-node')
-//   let deepestLevel = 0
-//
-//   return children.forEach(function (child))
-//
-// }
+function deepestChild() {
+  let children = document.querySelectorAll('#grand-node')
+  let deepestLevel = 0
+
+  function dig(child) {
+    if (Array.isArray(child.children)) {
+      
+    }
+  }
+
+}
 // function getAllChildren(group, children) {
 //   children = children || [];
 //   if(group && Array.isArray(group.children)) {
