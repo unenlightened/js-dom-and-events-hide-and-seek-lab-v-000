@@ -10,8 +10,8 @@ function increaseRankBy(n) {
   let ranks = document.querySelectorAll('.ranked-list li')
 
   ranks.forEach (rank =>
-    rank.innerHTML = parseInt(rank.innerHTML) + n )
-  }
+    rank.innerHTML = parseInt(rank.innerHTML) + n 
+  )
 }
 
 // probably not meant to solve it like this...
