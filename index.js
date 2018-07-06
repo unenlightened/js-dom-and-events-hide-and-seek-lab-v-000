@@ -30,6 +30,10 @@ function deepestChild() {
     while(currentChild.querySelector(':first-child') != null) {
       level++
       currentChild = currentChild.querySelector(':first-child')
+      if(level > deepestLevel) {
+        deepestLevel = level
+        deepestChild = currentChild
+      }
     }
 
     return deepestChild
