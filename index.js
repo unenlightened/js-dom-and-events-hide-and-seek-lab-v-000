@@ -28,7 +28,7 @@ function deepestChild() {
 
 
     return deepestChild
-  )}
+  })
 }
 // function getAllChildren(group, children) {
 //   children = children || [];
