@@ -24,11 +24,11 @@ function deepestChild() {
   let deepestLevel = 0
   let deepestChild = ''
 
-  children.forEach(child =>
+  children.forEach(child => {
 
 
     return deepestChild
-  )
+  )}
 }
 // function getAllChildren(group, children) {
 //   children = children || [];
